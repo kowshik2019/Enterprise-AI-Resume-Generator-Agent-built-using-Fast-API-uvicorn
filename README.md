@@ -36,7 +36,7 @@ Architecture workflow Diagram
 Execution Steps in order to run in fastapi uvicorn
 
 # 1. Create and enter project folder
-cd <<project-name>>
+cd project-name
 
 # 2. Install dependencies
 pip install -r requirements.txt
