@@ -1,5 +1,5 @@
 
-Enterprise-AI-Resume-Generator-Agent-built-using-Fast-API-uvicorn at http://localhost:8000 (port 8000)
+# Enterprise-AI-Resume-Generator-Agent-built-using-Fast-API-uvicorn at http://localhost:8000 (port 8000)
 
 The Business Problem 
 Problem: Job seekers — especially career changers and senior professionals — spend hours tailoring resumes to each job description. 
@@ -35,21 +35,21 @@ Architecture workflow Diagram
 
 Execution Steps in order to run in fastapi uvicorn
 
-# 1. Create and enter project folder
+1. Create and enter project folder
 cd project-name
 
-# 2. Install dependencies
+2. Install dependencies
 pip install -r requirements.txt
 
-# 4. Create .env file (paste your OpenAI API Key here)
+4. Create .env file (paste your OpenAI API Key here)
 OpenAI_API_KEY=YOUR-API-KEY-HERE
 API_APP_KEY=NAME-OF-API-APP-GIVEN
-
-# 5. Run the server
+ 
+5. Run the server
 uvicorn file_name:app --port 8000
 
-# 6. Open Swagger UI in browser
-# → http://localhost:8000/docs ->uthorize your API_APP_KEY_NAME and input data under post method to get the desired status code 200 with the generated ouptut
+6. Open Swagger UI in browser
+http://localhost:8000/docs ->uthorize your API_APP_KEY_NAME and input data under post method to get the desired status code 200 with the generated ouptut
 
 Output Screenshots:
 
