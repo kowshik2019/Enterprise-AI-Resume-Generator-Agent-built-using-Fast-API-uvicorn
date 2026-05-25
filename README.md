@@ -55,6 +55,8 @@ Output Screenshots:
 
 <img width="1385" height="516" alt="image" src="https://github.com/user-attachments/assets/94bde598-698c-4d92-8100-294ad5c57774" />
 
+<img width="1569" height="740" alt="image" src="https://github.com/user-attachments/assets/e5d57e32-1fec-42b8-98c8-f98faac6e06e" /> -> When we get user http request from Streamlit UI worflow shown in monitoring logs
+
 <img width="1895" height="778" alt="image" src="https://github.com/user-attachments/assets/44bd61f9-7c57-422c-8223-a383cc61cd26" />
 
 <img width="1086" height="524" alt="image" src="https://github.com/user-attachments/assets/d077c06f-c683-4d1e-bc5a-83be71f64849" />
