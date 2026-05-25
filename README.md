@@ -49,7 +49,7 @@ API_APP_KEY=NAME-OF-API-APP-GIVEN
 uvicorn file_name:app --port 8000
 
 6. Open Swagger UI in browser
-http://localhost:8000/docs ->uthorize your API_APP_KEY_NAME and input data under post method to get the desired status code 200 with the generated ouptut
+http://localhost:8000/docs -> Authorize your API_APP_KEY_NAME and input data under post method to get the desired status code 200 with the generated ouptut
 
 Output Screenshots:
 
