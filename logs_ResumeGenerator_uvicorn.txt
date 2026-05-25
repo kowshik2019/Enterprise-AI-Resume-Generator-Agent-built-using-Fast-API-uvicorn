@@ -1,0 +1,33 @@
+
+
+
+# Uvicorn Monitoring log
+
+PS C:\Users\kowsh\OneDrive\Desktop\DemoFeb> uvicorn main_Resumegenerator:app --reload --port 8000
+INFO:     Will watch for changes in these directories: ['C:\\Users\\kowsh\\OneDrive\\Desktop\\DemoFeb']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [25660] using WatchFiles
+INFO:     Started server process [11448]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     127.0.0.1:49822 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49826 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49826 - "GET /openapi.json HTTP/1.1" 200 OK
+2026-05-24 17:35:03,468 - INFO - [2026-05-24 17:35:03] [API] RECEIVED REQUEST] Generating resume for Kowshik with target role Data Scientist
+2026-05-24 17:35:03,469 - INFO - [2026-05-24 17:35:03] [Orchestrator] STARTED] Starting resume generation process for KowshikTarget Role: Data Scientist
+2026-05-24 17:35:03,470 - INFO - [2026-05-24 17:35:03] [ProfileAnalyzer] STARTED] Analyzing profile for Kowshik
+2026-05-24 17:35:05,492 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:35:05,503 - INFO - [2026-05-24 17:35:05] [ProfileAnalyzer] COMPLETED] Candidate level: Senior | Domain: Data Science
+2026-05-24 17:35:05,505 - INFO - [2026-05-24 17:35:05] [ATSOptimizer] STARTED] Optimizing for ATS keywords in Data Scientist
+2026-05-24 17:35:07,366 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:35:07,367 - INFO - [2026-05-24 17:35:07] [ATSOptimizer] COMPLETED] ATS Score=75 | Missing Keywords= 102026-05-24 17:35:07,368 - INFO - [2026-05-24 17:35:07] [ResumeWriter] STARTED] Generating professional resume content for Kowshik
+2026-05-24 17:35:12,686 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:35:12,688 - INFO - [2026-05-24 17:35:12] [ResumeWriter] COMPLETED] Resume generated for Kowshik |Bullets= 7 | Skills= 0
+2026-05-24 17:35:12,689 - INFO - [2026-05-24 17:35:12] [ReviewerAgent] STARTED] Reviewing generated resume content for quality and coherence
+2026-05-24 17:35:14,147 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-24 17:35:14,150 - INFO - [2026-05-24 17:35:14] [ReviewerAgent] COMPLETED] Review completed | Overall Quality=85 | Coherence=80 | Impact=82
+2026-05-24 17:35:14,153 - INFO - [2026-05-24 17:35:14] [Orchestrator] COMPLETED] All 4 agentsfinsihed -assembling final completion
+2026-05-24 17:35:14,154 - INFO - [2026-05-24 17:35:14] [API] SUCCESS SENDING RESPONSE] Resume generation completed for Kowshik
+INFO:     127.0.0.1:49875 - "POST /generate-resume HTTP/1.1" 200 OK
+
+Response Generated with status code 200 with all the required suggestions and improvements
